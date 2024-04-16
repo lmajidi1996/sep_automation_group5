@@ -1,6 +1,8 @@
 package com.sep.utilities;
 
-import com.sep.utilities.file.PropertiesUtils;
+
+import java.io.FileInputStream;
+import java.util.Properties;
 
 /**
  * Reads the configuration properties from the Configuration.properties file.
@@ -13,11 +15,24 @@ public class ConfigurationReader {
      * @param key the property key
      * @return the value of the specified property key
      */
-    public static String getConfigProperty(String key) {
-        if (key != null) {
-            return PropertiesUtils.getProperty("Configuration.properties", key);
+
+    private static Properties properties;
+
+    static {
+        try {
+            String path = "configuration.properties";
+            FileInputStream input = new FileInputStream(path);
+            properties = new Properties();
+            properties.load(input);
+            input.close();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        throw new NullPointerException("INVALID PROPERTIES KEY");
     }
+
+    public static String getConfigProperty(String keyName) {
+        return properties.getProperty(keyName);
+    }
+
 
 }

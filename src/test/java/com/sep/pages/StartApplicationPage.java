@@ -58,7 +58,6 @@ public class StartApplicationPage extends BasePage {
     public WebElement programPrice;
 
 
-
     @FindBy(xpath = "//p[@class = 'footer-text' and contains(text(), 'Need help?')]")
     public WebElement footer;
 

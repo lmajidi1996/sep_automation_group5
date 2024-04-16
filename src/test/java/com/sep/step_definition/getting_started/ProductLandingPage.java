@@ -4,7 +4,7 @@ import com.sep.pages.BasePage;
 import com.sep.pages.LeftMainPage;
 import com.sep.pages.StartApplicationPage;
 import com.sep.utilities.ProductReader;
-import com.sep.utilities.web.BrowserUtils;
+import com.sep.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 

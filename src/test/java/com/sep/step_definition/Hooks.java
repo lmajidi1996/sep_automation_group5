@@ -1,8 +1,7 @@
 package com.sep.step_definition;
 
 import com.sep.utilities.ConfigurationReader;
-import com.sep.utilities.web.BrowserUtils;
-import com.sep.utilities.web.DriverUtils;
+import com.sep.utilities.DriverUtils;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;

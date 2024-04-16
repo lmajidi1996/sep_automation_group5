@@ -38,8 +38,10 @@ public class Product {
     @JsonProperty("product_id")
     private String productId;
 
+    @JsonProperty("teen")
     private String teen;
 
+    @JsonProperty("type")
     private String type;
 
     @JsonProperty("program_id")
@@ -60,8 +62,10 @@ public class Product {
     @JsonProperty("external_url")
     private String externalUrl;
 
+    @JsonProperty("terms")
     private String terms;
 
+    @JsonProperty("prices")
     private List<Price> prices;
 
 
@@ -79,11 +83,13 @@ public class Product {
     @Data
     public static class Price {
 
+        @JsonProperty("active")
         private boolean active;
 
         @JsonProperty("product_name")
         private int baseAmount;
 
+        @JsonProperty("type")
         private String type;
 
         @JsonProperty("upfront_discount")

@@ -1,4 +1,4 @@
-package com.sep.utilities.web;
+package com.sep.utilities;
 
 import com.sep.utilities.ConfigurationReader;
 import org.openqa.selenium.WebDriver;

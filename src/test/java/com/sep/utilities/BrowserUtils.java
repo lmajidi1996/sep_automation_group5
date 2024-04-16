@@ -1,4 +1,4 @@
-package com.sep.utilities.web;
+package com.sep.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.*;
