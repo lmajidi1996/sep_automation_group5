@@ -1,0 +1,18 @@
+{
+  "data": {
+    "product_id": 3,
+    "product_type": "PROGRAM",
+    "product_link": "https://cydeo.com/program/java-sdet/",
+    "lms_program_id": 14,
+    "lms_program_name": "Batch 5 sdet",
+    "lms_program_code": "SD-US005",
+    "start_date": "2024-02-27T00:00:00",
+    "refund_date": "2024-03-08T23:59:59",
+    "full_price": 1000,
+    "discount_amount": 50,
+    "discounted_price": 950,
+    "is_for_teens": false
+  },
+  "success": true,
+  "status": 200
+}

@@ -1,0 +1,44 @@
+{
+  "data": {
+    "prices": [
+
+      {
+        "price_id": "price_1OqiyxCtKIAKC0qWFX16nxTV",
+        "type": "one_time",
+        "allow_coupons": true,
+        "receipt": {
+          "payment_type": "one_time",
+          "payment_summary": {
+            "base_price": 1000,
+            "currency": "usd",
+            "one_time_discount": 50,
+            "sub_total": 950,
+            "fee": 0,
+            "total": 950
+          }
+        }
+      },
+      {
+        "price_id": "price_1OqizfCtKIAKC0qWlCMiMK4J",
+        "type": "recurring",
+        "interval": "month",
+        "installments": 5,
+        "allow_coupons": true,
+        "receipt": {
+          "payment_type": "recurring",
+          "installment_summary": {
+            "basePrice": 1000,
+            "number_of_installments": 5,
+            "installment_price": 200,
+            "sub_total": 200,
+            "fee": 0,
+            "total": 200
+          }
+        }
+      }
+
+    ]
+  },
+  "success": true,
+  "status": 200
+}
