@@ -16,8 +16,13 @@ import static io.restassured.RestAssured.reset;
 
 public class Hooks {
 
+
     /**
-     * This method is executed before each scenario. It sets the implicit wait time and opens the application URL.
+     * This method is a setup hook that runs before each scenario.
+     * It checks if the scenario tag starts with "@api" and if so, it sets the base URI for API requests.
+     * Otherwise, it initializes the web driver, maximizes the window, and sets implicit and page load timeouts.
+     *
+     * @param scenario The scenario object that contains information about the current scenario.
      */
     @Before
     public void setup(Scenario scenario) {
@@ -31,11 +36,13 @@ public class Hooks {
         DriverUtils.getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
     }
 
+
     /**
-     * This method is executed after each scenario. It takes a screenshot if the scenario failed, closes the browser, and
-     * sleeps for 2 seconds.
+     * This method is a teardown hook that runs after each scenario.
+     * It checks if the scenario tag starts with "@api" and if so, it resets the API client.
+     * Otherwise, it takes a screenshot if the scenario failed and then closes the web driver.
      *
-     * @param scenario the current scenario
+     * @param scenario The scenario object that contains information about the current scenario.
      */
     @After
     public void teardown(Scenario scenario) {
@@ -48,7 +55,6 @@ public class Hooks {
             scenario.attach(screenshot, "image/png", scenario.getName());
         }
         DriverUtils.closeDriver();
-
     }
 
 }
