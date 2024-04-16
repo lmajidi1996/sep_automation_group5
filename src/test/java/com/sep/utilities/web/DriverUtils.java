@@ -23,7 +23,7 @@ public class DriverUtils {
     public static WebDriver getDriver(){
 
         if(driverPool.get() == null){
-            String browserType = ConfigurationReader.getConfigProperty("browser");
+            String browserType = ConfigurationReader.getConfigProperty("browser").toLowerCase();
             switch (browserType){
                 case "chrome":
                     driverPool.set(new ChromeDriver());
