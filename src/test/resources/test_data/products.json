@@ -88,7 +88,7 @@
   },
 
   {
-    "Available": "on",
+    "available": "on",
     "Product name": "Java Selenium SDET",
     "product_id": "prod_PapJzI7O1qpqU8",
     "teen": "no",

@@ -1,10 +1,10 @@
 {
   "data": {
-    "product_id": 3,
-    "product_type": "PROGRAM",
-    "product_link": "https://cydeo.com/program/java-sdet/",
-    "lms_program_id": 14,
-    "lms_program_name": "Batch 5 sdet",
+    "productId": 3,
+    "productType": "PROGRAM",
+    "productLink": "https://cydeo.com/program/java-sdet/",
+    "lmsProgramId": 14,
+    "lmsProgramName": "Batch 5 sdet",
     "lms_program_code": "SD-US005",
     "start_date": "2024-02-27T00:00:00",
     "refund_date": "2024-03-08T23:59:59",

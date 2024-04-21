@@ -25,7 +25,7 @@ public class Hooks {
      */
     @Before
     public void setup(Scenario scenario) {
-        if (scenario.getSourceTagNames().stream().anyMatch(p -> p.startsWith("@api"))) {
+        if (scenario.getSourceTagNames().stream().anyMatch(p -> p.equalsIgnoreCase("@api"))) {
             baseURI = ConfigurationReader.getConfigProperty("baseUrl");
             return;
         }
@@ -45,7 +45,7 @@ public class Hooks {
      */
     @After
     public void teardown(Scenario scenario) {
-        if (scenario.getSourceTagNames().stream().anyMatch(p -> p.startsWith("@api"))) {
+        if (scenario.getSourceTagNames().stream().anyMatch(p -> p.equalsIgnoreCase("@api"))) {
             reset();
             return;
         }
