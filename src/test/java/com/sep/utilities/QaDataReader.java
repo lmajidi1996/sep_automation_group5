@@ -10,11 +10,11 @@ import java.util.List;
 
 /**
  * This class provides methods for reading data from a JSON file and returning it as objects.
- * The data is stored in the file "src/test/resources/test_data/products.json", which is a JSON array of objects.
+ * The data is stored in the file "src/test/resources/test_data/qa_data.json", which is a JSON array of objects.
  */
-public class ProductReader {
+public class QaDataReader {
 
-    private final static String path = "src/test/resources/test_data/products.json";
+    private final static String path = "src/test/resources/test_data/qa_data.json";
 
     /**
      * This method returns a single product based on the program ID.

@@ -3,7 +3,7 @@ package com.sep.step_definition.getting_started;
 import com.sep.pages.BasePage;
 import com.sep.pages.LeftMainPage;
 import com.sep.pages.StartApplicationPage;
-import com.sep.utilities.ProductReader;
+import com.sep.utilities.QaDataReader;
 import com.sep.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -55,7 +55,7 @@ public class ProductLandingPage {
         BrowserUtils.waitForVisibility(startApplicationPage.programStartDate, 10);
 
         assert startApplicationPage.programStartDate.getText().contains(
-                BrowserUtils.abbreviateMonth(ProductReader.getSingleProduct("rfep").getStartDate())
+                BrowserUtils.abbreviateMonth(QaDataReader.getSingleProduct("rfep").getStartDate())
         );
     }
 
@@ -64,7 +64,7 @@ public class ProductLandingPage {
         BrowserUtils.waitForVisibility(startApplicationPage.refundEndDate, 10);
 
         assert startApplicationPage.refundEndDate.getText().contains(
-                BrowserUtils.abbreviateMonth(ProductReader.getSingleProduct("rfep").getRefundDate())
+                BrowserUtils.abbreviateMonth(QaDataReader.getSingleProduct("rfep").getRefundDate())
         );
     }
 
