@@ -8,7 +8,7 @@ import com.sep.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
-public class ProductLandingPage {
+public class UITest {
 
     private StartApplicationPage startApplicationPage = new StartApplicationPage();
     private LeftMainPage leftMainPage = new LeftMainPage();

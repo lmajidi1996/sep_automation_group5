@@ -1,4 +1,4 @@
-@SEP-02 @api
+@SEP-02 @api # if the scenarios are for API, then teh @api tag need to be added
 Feature: Verify Product Schema
   As a QA engineer, I want to verify the response schema of the product endpoint,
   So that I can ensure it contains all necessary fields with correct data types.
