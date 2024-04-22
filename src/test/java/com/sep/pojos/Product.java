@@ -9,8 +9,8 @@ import lombok.Data;
 import java.util.List;
 
 
+@Data
 @JsonIgnoreProperties(ignoreUnknown =true)
-@JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "available",
         "productName",
@@ -26,7 +26,6 @@ import java.util.List;
         "terms",
         "prices"
 })
-@Data
 public class Product {
 
     @JsonProperty("available")
@@ -109,9 +108,7 @@ public class Product {
         private int numberOfInstallments;
 
 
-
     }
-
 
 
 }

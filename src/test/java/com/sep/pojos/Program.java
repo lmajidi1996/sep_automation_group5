@@ -14,10 +14,10 @@ import lombok.Data;
         "status"
 })
 @Data
-public class Programs {
+public class Program {
 
     @JsonProperty("data")
-    private Data data;
+    private ProgramData data;
 
     @JsonProperty("success")
     private boolean success;
@@ -36,11 +36,11 @@ public class Programs {
             "refundDate",
             "fullPrice",
             "discountAmount",
-            "discountPrice",
+            "discountedPrice",
             "isForTeens"
     })
-    @lombok.Data
-    public static class Data {
+    @Data
+    public static class ProgramData {
 
         @JsonProperty("productId")
         private int productId;
@@ -72,8 +72,8 @@ public class Programs {
         @JsonProperty("discountAmount")
         private int discountAmount;
 
-        @JsonProperty("discountPrice")
-        private int discountPrice;
+        @JsonProperty("discountedPrice")
+        private int discountedPrice;
 
         @JsonProperty("isForTeens")
         private boolean isForTeens;
