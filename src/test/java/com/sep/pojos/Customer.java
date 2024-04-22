@@ -1,4 +1,4 @@
-package com.sep.pojos.customer;
+package com.sep.pojos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,5 +26,23 @@ public class Customer {
 
     @JsonProperty("parent")
     private Parent parent;
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    @Data
+    public class Parent {
+
+        @JsonProperty("parentFirstName")
+        private String parentFirstName;
+
+        @JsonProperty("parentLastName")
+        private String parentLastName;
+
+        @JsonProperty("parentEmail")
+        private String parentEmail;
+
+        @JsonProperty("parentPhoneNumber")
+        private String parentPhoneNumber;
+
+    }
 
 }

@@ -1,4 +1,4 @@
-@ui-test01
+@SEP01
 Feature: Product landing page
   As a customer, I should be able to see the product landing page.
 
