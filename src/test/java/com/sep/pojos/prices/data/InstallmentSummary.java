@@ -7,15 +7,6 @@ import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonPropertyOrder({
-        "basePrice",
-        "numberOfInstallments",
-        "installmentPrice",
-        "couponDiscount",
-        "subTotal",
-        "fee",
-        "total"
-})
 public class InstallmentSummary {
     @JsonProperty("basePrice")
     private int basePrice;

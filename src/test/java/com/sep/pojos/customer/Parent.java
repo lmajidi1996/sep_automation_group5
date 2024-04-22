@@ -7,13 +7,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-        "parentFirstName",
-        "parentLastName",
-        "parentEmail",
-        "parentPhoneNumber"
-})
 @Data
 public class Parent {
 

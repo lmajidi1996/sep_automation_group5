@@ -6,14 +6,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonPropertyOrder({
-        "firstName",
-        "lastName",
-        "email",
-        "phoneNumber",
-        "referralSource",
-        "parent"
-})
 @Data
 public class Customer {
 

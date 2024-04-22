@@ -1,24 +1,13 @@
 package com.sep.pojos.program.data;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.Data;
 
-@JsonPropertyOrder({
-        "productId",
-        "productType",
-        "productLink",
-        "lmsProgramId",
-        "lmsProgramName",
-        "lmsProgramCode",
-        "startDate",
-        "refundDate",
-        "fullPrice",
-        "discountAmount",
-        "discountedPrice",
-        "isForTeens"
-})
+
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ProgramData {
 
     @JsonProperty("productId")

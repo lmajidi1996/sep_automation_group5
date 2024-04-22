@@ -9,9 +9,6 @@ import java.util.List;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonPropertyOrder({
-        "prices"
-})
 public class PricesData {
     @JsonProperty("prices")
     private List<Price> prices;

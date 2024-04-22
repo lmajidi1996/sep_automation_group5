@@ -8,11 +8,6 @@ import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonPropertyOrder({
-        "data",
-        "success",
-        "status"
-})
 public class Prices {
 
     @JsonProperty("data")
