@@ -1,124 +1,124 @@
 [
   {
     "available": "on",
-    "product_name": "Test Automation with Selenium",
-    "product_id": "prod_PMYWvWHeM3LeY9",
+    "productName": "Test Automation with Selenium",
+    "productId": "prod_PMYWvWHeM3LeY9",
     "teen": "no",
     "type": "Program",
-    "program_id": 56,
-    "program_code": "taws",
-    "program_name": "Test Automation with Selenium",
-    "start_date": "April 10, 2024",
-    "refund_date": "May 10, 2024",
-    "external_url": "cydeo.com",
+    "programId": 56,
+    "programCode": "taws",
+    "programName": "Test Automation with Selenium",
+    "startDate": "April 10, 2024",
+    "refundDate": "May 10, 2024",
+    "externalUrl": "cydeo.com",
     "terms": "https://docs.google.com/document/d/1FZwuv6fKa8hUAlfSykQ8jN85ycl6VCIBe_HYbY5UMkM/edit#heading=h.iq7wiy3olb6",
     "prices": [
       {
         "active": true,
-        "base_amount": 50000,
+        "baseAmount": 50000,
         "type": "one-time",
-        "upfront_discount": true,
-        "upfront_discount_amount": 5000,
-        "allow_coupons": true,
-        "coupon_discount": 5000
+        "upfrontDiscount": true,
+        "upfrontDiscountAmount": 5000,
+        "allowCoupons": true,
+        "couponDiscount": 5000
       },
       {
         "active": true,
-        "base_amount": 10000,
+        "baseAmount": 10000,
         "type": "recurring",
-        "number_of_installments": 5,
-        "allow_coupons": true,
-        "coupon_discount": 5000
-      }
-    ]
-  },
-
-  {
-    "Available": "on",
-    "Product name": "React Front End Program",
-    "product_id": "prod_PapFaO5yScBged",
-    "teen": "no",
-    "type": "Program",
-    "program_id": 11,
-    "program_code": "rfep",
-    "program_name": "React Front End Program",
-    "start_date": "May 30, 2024",
-    "refund_date": "June 10, 2024",
-    "external_url": "cydeo.com",
-    "terms": "https://docs.google.com/document/d/1FZwuv6fKa8hUAlfSykQ8jN85ycl6VCIBe_HYbY5UMkM/edit#heading=h.iq7wiy3olb6",
-    "prices": [
-      {
-        "active": true,
-        "base_amount": 40000,
-        "type": "one-time",
-        "upfront_discount": true,
-        "upfront_discount_amount": 5000
-      },
-      {
-        "active": true,
-        "base_amount": 10000,
-        "type": "recurring",
-        "number_of_installments": 5
-      }
-    ]
-  },
-
-  {
-    "Available": "on",
-    "Product name": "Java Foundations for Teens",
-    "product_id": "prod_PapHKIwdh1poXM",
-    "teen": "teen",
-    "type": "Program",
-    "program_id": 4,
-    "program_code": "jfft",
-    "program_name": "Java Foundations for Teens",
-    "start_date": "September 11, 2024",
-    "refund_date": "September 18, 2024",
-    "external_url": "cydeo.com",
-    "terms": "https://docs.google.com/document/d/1FZwuv6fKa8hUAlfSykQ8jN85ycl6VCIBe_HYbY5UMkM/edit#heading=h.iq7wiy3olb6",
-    "prices": [
-      {
-        "active": true,
-        "base_amount": 14900,
-        "type": "one-time",
-        "upfront_discount": true,
-        "upfront_discount_amount": 5000
+        "numberOfInstallments": 5,
+        "allowCoupons": true,
+        "couponDiscount": 5000
       }
     ]
   },
 
   {
     "available": "on",
-    "Product name": "Java Selenium SDET",
-    "product_id": "prod_PapJzI7O1qpqU8",
+    "productName": "React Front End Program",
+    "productId": "prod_PapFaO5yScBged",
     "teen": "no",
     "type": "Program",
-    "program_id": 5,
-    "program_code": "jss",
-    "program_name": "Java Selenium SDET",
-    "start_date": "February 7, 2024",
-    "refund_date": "March 7, 2024",
-    "external_url": "cydeo.com",
+    "programId": 11,
+    "programCode": "rfep",
+    "programName": "React Front End Program",
+    "startDate": "May 30, 2024",
+    "refundDate": "June 10, 2024",
+    "externalUrl": "cydeo.com",
     "terms": "https://docs.google.com/document/d/1FZwuv6fKa8hUAlfSykQ8jN85ycl6VCIBe_HYbY5UMkM/edit#heading=h.iq7wiy3olb6",
     "prices": [
       {
         "active": true,
-        "base_amount": 100000,
+        "baseAmount": 40000,
         "type": "one-time",
-        "upfront_discount": true,
-        "upfront_discount_amount": 10000
+        "upfrontDiscount": true,
+        "upfrontDiscountAmount": 5000
       },
       {
         "active": true,
-        "base_amount": 10000,
+        "baseAmount": 10000,
         "type": "recurring",
-        "number_of_installments": 5
+        "numberOfInstallments": 5
+      }
+    ]
+  },
+
+  {
+    "available": "on",
+    "ProductName": "Java Foundations for Teens",
+    "productId": "prod_PapHKIwdh1poXM",
+    "teen": "teen",
+    "type": "Program",
+    "programId": 4,
+    "programCode": "jfft",
+    "programName": "Java Foundations for Teens",
+    "startDate": "September 11, 2024",
+    "refundDate": "September 18, 2024",
+    "externalUrl": "cydeo.com",
+    "terms": "https://docs.google.com/document/d/1FZwuv6fKa8hUAlfSykQ8jN85ycl6VCIBe_HYbY5UMkM/edit#heading=h.iq7wiy3olb6",
+    "prices": [
+      {
+        "active": true,
+        "baseAmount": 14900,
+        "type": "one-time",
+        "upfrontDiscount": true,
+        "upfrontDiscountAmount": 5000
+      }
+    ]
+  },
+
+  {
+    "available": "on",
+    "productName": "Java Selenium SDET",
+    "productId": "prod_PapJzI7O1qpqU8",
+    "teen": "no",
+    "type": "Program",
+    "programId": 5,
+    "programCode": "jss",
+    "programName": "Java Selenium SDET",
+    "startDate": "February 7, 2024",
+    "refundDate": "March 7, 2024",
+    "externalUrl": "cydeo.com",
+    "terms": "https://docs.google.com/document/d/1FZwuv6fKa8hUAlfSykQ8jN85ycl6VCIBe_HYbY5UMkM/edit#heading=h.iq7wiy3olb6",
+    "prices": [
+      {
+        "active": true,
+        "baseAmount": 100000,
+        "type": "one-time",
+        "upfrontDiscount": true,
+        "upfrontDiscountAmount": 10000
       },
       {
         "active": true,
-        "base_amount": 50000,
+        "baseAmount": 10000,
         "type": "recurring",
-        "number_of_installments": 2
+        "numberOfInstallments": 5
+      },
+      {
+        "active": true,
+        "baseAmount": 50000,
+        "type": "recurring",
+        "numberOfInstallments": 2
       }
     ]
   }

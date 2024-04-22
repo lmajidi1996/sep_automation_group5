@@ -29,21 +29,21 @@ public class Prices {
     @JsonIgnoreProperties(ignoreUnknown = true)
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonPropertyOrder({
-            "price_id",
+            "priceId",
             "type",
-            "allow_coupons",
+            "allowCoupons",
             "receipt"
     })
     @lombok.Data
     public static class Data {
 
-        @JsonProperty("price_id")
+        @JsonProperty("priceId")
         private String priceId;
 
         @JsonProperty("type")
         private String type;
 
-        @JsonProperty("allow_coupons")
+        @JsonProperty("allowCoupons")
         private Boolean allowCoupons;
 
         @JsonProperty("receipt")
@@ -53,42 +53,42 @@ public class Prices {
         @JsonIgnoreProperties(ignoreUnknown = true)
         @JsonInclude(JsonInclude.Include.NON_NULL)
         @JsonPropertyOrder({
-                "payment_type",
-                "payment_summary",
-                "installment_summary"
+                "paymentType",
+                "paymentSummary",
+                "installmentSummary"
         })
         public static class Receipt {
 
-            @JsonProperty("payment_type")
+            @JsonProperty("paymentType")
             private String paymentType;
 
-            @JsonProperty("payment_summary")
+            @JsonProperty("paymentSummary")
             private PaymentSummary paymentSummary;
-            @JsonProperty("installment_summary")
+            @JsonProperty("installmentSummary")
             private InstallmentSummary installmentSummary;
 
             @JsonIgnoreProperties(ignoreUnknown = true)
             @JsonInclude(JsonInclude.Include.NON_NULL)
             @JsonPropertyOrder({
-                    "base_price",
+                    "basePrice",
                     "currency",
-                    "one_time_discount",
-                    "sub_total",
+                    "oneTimeDiscount",
+                    "subTotal",
                     "fee",
                     "total"
             })
             public static class PaymentSummary {
 
-                @JsonProperty("base_price")
+                @JsonProperty("basePrice")
                 private int basePrice;
 
                 @JsonProperty("currency")
                 private String currency;
 
-                @JsonProperty("one_time_discount")
+                @JsonProperty("oneTimeDiscount")
                 private int oneTimeDiscount;
 
-                @JsonProperty("sub_total")
+                @JsonProperty("subTotal")
                 private int subTotal;
 
                 @JsonProperty("fee")
@@ -102,24 +102,24 @@ public class Prices {
             @JsonIgnoreProperties(ignoreUnknown = true)
             @JsonInclude(JsonInclude.Include.NON_NULL)
             @JsonPropertyOrder({
-                    "base_price",
-                    "number_of_installments",
-                    "installment_price",
-                    "sub_total",
+                    "basePrice",
+                    "numberOfInstallments",
+                    "installmentPrice",
+                    "subTotal",
                     "fee",
                     "total"
             })
             public static class InstallmentSummary {
-                @JsonProperty("base_price")
+                @JsonProperty("basePrice")
                 private int basePrice;
 
-                @JsonProperty("number_of_installments")
+                @JsonProperty("numberOfInstallments")
                 private int numberOfInstallments;
 
-                @JsonProperty("installment_price")
+                @JsonProperty("installmentPrice")
                 private int installmentPrice;
 
-                @JsonProperty("sub_total")
+                @JsonProperty("subTotal")
                 private int subTotal;
 
                 @JsonProperty("fee")

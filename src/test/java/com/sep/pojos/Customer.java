@@ -9,15 +9,16 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "first_name",
-        "last_name",
+        "firstName",
+        "lastName",
         "email",
-        "phone_number",
-        "referral_source",
-        "parent_first_name",
-        "parent_last_name",
-        "parent_email",
-        "parent_phone_number"
+        "phoneNumber",
+        "referralSource",
+        "parent",
+        "parentFirstName",
+        "parentLastName",
+        "parentEmail",
+        "parentPhoneNumber"
 })
 @Data
 public class Customer {
@@ -37,19 +38,34 @@ public class Customer {
     @JsonProperty("referral_source")
     private String referralSource;
 
-    @JsonProperty("parent_first_name")
-    private String parentFirstName;
+    @JsonProperty("parent")
+    private Parent parent;
 
-    @JsonProperty("parent_last_name")
-    private String parentLastName;
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonPropertyOrder({
+            "parentFirstName",
+            "parentLastName",
+            "parentEmail",
+            "parentPhoneNumber"
+    })
+    @Data
+    public static class Parent {
 
-    @JsonProperty("parent_email")
-    private String parentEmail;
 
-    @JsonProperty("parent_phone_number")
-    private String parentPhoneNumber;
+        @JsonProperty("parentFirstName")
+        private String parentFirstName;
 
+        @JsonProperty("parentLastName")
+        private String parentLastName;
 
+        @JsonProperty("parentEmail")
+        private String parentEmail;
+
+        @JsonProperty("parentPhoneNumber")
+        private String parentPhoneNumber;
+
+    }
 
 
 }

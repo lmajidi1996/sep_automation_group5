@@ -38,7 +38,6 @@ public class StartApplicationPage extends BasePage {
     @FindBy(xpath = "//mat-label[text()='How did you hear about us?']")
     public WebElement howDidYouHearAboutUsDropDown;
 
-
     @FindBy(xpath = "//*[text()='Google']")
     public WebElement googleOption;
 
@@ -61,7 +60,7 @@ public class StartApplicationPage extends BasePage {
     @FindBy(xpath = "//p[@class = 'footer-text' and contains(text(), 'Need help?')]")
     public WebElement footer;
 
-    @FindBy(xpath = "//button[@class = 'next-button']")
+    @FindBy(xpath = "//button[@class = 'next-button' and text()='Next']")
     public WebElement nextButton;
 
 

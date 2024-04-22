@@ -13,11 +13,11 @@ import java.util.List;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "available",
-        "product_name",
-        "product_id",
+        "productName",
+        "productId",
         "teen",
         "type",
-        "program_id",
+        "programId",
         "program_code",
         "program_name",
         "start_date",
@@ -32,10 +32,10 @@ public class Product {
     @JsonProperty("available")
     private String available;
 
-    @JsonProperty("product_name")
+    @JsonProperty("productName")
     private String productName;
 
-    @JsonProperty("product_id")
+    @JsonProperty("productId")
     private String productId;
 
     @JsonProperty("teen")
@@ -44,22 +44,22 @@ public class Product {
     @JsonProperty("type")
     private String type;
 
-    @JsonProperty("program_id")
+    @JsonProperty("programId")
     private int programId;
 
-    @JsonProperty("program_code")
+    @JsonProperty("programCode")
     private String programCode;
 
-    @JsonProperty("program_name")
+    @JsonProperty("programName")
     private String programName;
 
-    @JsonProperty("start_date")
+    @JsonProperty("startDate")
     private String startDate;
 
-    @JsonProperty("refund_date")
+    @JsonProperty("refundDate")
     private String refundDate;
 
-    @JsonProperty("external_url")
+    @JsonProperty("externalUrl")
     private String externalUrl;
 
     @JsonProperty("terms")
@@ -73,12 +73,13 @@ public class Product {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonPropertyOrder({
             "active",
-            "base_amount",
+            "baseAmount",
             "type",
-            "upfront_discount",
-            "upfront_discount_amount",
-            "allow_coupons",
-            "coupon_discount",
+            "upfrontDiscount",
+            "upfrontDiscountAmount",
+            "allowCoupons",
+            "couponDiscount",
+            "numberOfInstallments"
     })
     @Data
     public static class Price {
@@ -86,23 +87,27 @@ public class Product {
         @JsonProperty("active")
         private boolean active;
 
-        @JsonProperty("product_name")
+        @JsonProperty("productName")
         private int baseAmount;
 
         @JsonProperty("type")
         private String type;
 
-        @JsonProperty("upfront_discount")
+        @JsonProperty("upfrontDiscount")
         private boolean upfrontDiscount;
 
-        @JsonProperty("upfront_discount_amount")
+        @JsonProperty("upfrontDiscountAmount")
         private int upfrontDiscountAmount;
 
-        @JsonProperty("allow_coupons")
+        @JsonProperty("allowCoupons")
         private Boolean allowCoupons;
 
-        @JsonProperty("coupon_discount")
+        @JsonProperty("couponDiscount")
         private Integer couponDiscount;
+
+        @JsonProperty("numberOfInstallments")
+        private int numberOfInstallments;
+
 
 
     }

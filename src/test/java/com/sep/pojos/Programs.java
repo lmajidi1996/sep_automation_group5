@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.Data;
 
-@JsonIgnoreProperties(ignoreUnknown =true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "data",
@@ -25,64 +25,59 @@ public class Programs {
     @JsonProperty("status")
     private int status;
 
-    @JsonIgnoreProperties(ignoreUnknown =true)
-    @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonPropertyOrder({
-            "product_id",
-            "product_type",
-            "product_link",
-            "lms_program_id",
-            "lms_program_name",
-            "lms_program_code",
-            "lms_program_start_date",
-            "lms_program_refund_date",
-            "full_price",
-            "discount_amount",
-            "discount_price",
-            "is_for_teens"
+            "productId",
+            "productType",
+            "productLink",
+            "lmsProgramId",
+            "lmsProgramName",
+            "lmsProgramCode",
+            "startDate",
+            "refundDate",
+            "fullPrice",
+            "discountAmount",
+            "discountPrice",
+            "isForTeens"
     })
-
     @lombok.Data
     public static class Data {
 
-        @JsonProperty("product_id")
-        private String productId;
+        @JsonProperty("productId")
+        private int productId;
 
-        @JsonProperty("product_type")
+        @JsonProperty("productType")
         private String productType;
 
-        @JsonProperty("product_link")
+        @JsonProperty("productLink")
         private String productLink;
 
-        @JsonProperty("lms_program_id")
-        private String lmsProgramId;
+        @JsonProperty("lmsProgramId")
+        private int lmsProgramId;
 
-        @JsonProperty("lms_program_name")
+        @JsonProperty("lmsProgramName")
         private String lmsProgramName;
 
-        @JsonProperty("lms_program_code")
+        @JsonProperty("lmsProgramCode")
         private String lmsProgramCode;
 
-        @JsonProperty("lms_program_start_date")
-        private String lmsProgramStartDate;
+        @JsonProperty("startDate")
+        private String startDate;
 
-        @JsonProperty("lms_program_refund_date")
-        private String lmsProgramRefundDate;
+        @JsonProperty("refundDate")
+        private String refundDate;
 
-        @JsonProperty("full_price")
+        @JsonProperty("fullPrice")
         private int fullPrice;
 
-        @JsonProperty("discount_amount")
+        @JsonProperty("discountAmount")
         private int discountAmount;
 
-        @JsonProperty("discount_price")
+        @JsonProperty("discountPrice")
         private int discountPrice;
 
-        @JsonProperty("is_for_teens")
+        @JsonProperty("isForTeens")
         private boolean isForTeens;
 
     }
-
-
 
 }
