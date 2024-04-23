@@ -73,6 +73,12 @@ public class ReviewPlanPage extends BasePage{
     @FindBy(xpath = "//p[@id='Field-numberError' and @class='p-FieldError Error' and @role='alert']")
     public WebElement cardNumberErrorMessage;
 
+    @FindBy(xpath = "(//span[@class='back-button'])[2]")
+    public WebElement backButton;
+
+    @FindBy(xpath = "(//p[@class = 'footer-text' and contains(text(), 'Need help?')])[3]")
+    public WebElement footerText;
+
     @FindBy(xpath = "//p[@id='Field-expiryError' and @class='p-FieldError Error' and @role='alert']")
     public WebElement cardExpiryErrorMessage;
 
@@ -82,14 +88,6 @@ public class ReviewPlanPage extends BasePage{
     @FindBy(xpath = "//p[@id='Field-postalCodeError' and @class='p-FieldError Error' and @role='alert']")
     public WebElement zipCodeErrorMessage;
 
-
-
-
-    @FindBy(xpath = "(//span[@class='back-button'])[2]")
-    public WebElement backButton;
-
-    @FindBy(xpath = "(//p[@class = 'footer-text' and contains(text(), 'Need help?')])[3]")
-    public WebElement footerText;
 
 
 
