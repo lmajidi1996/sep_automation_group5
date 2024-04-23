@@ -10,13 +10,14 @@ public class LeftMainPage extends BasePage {
     @FindBy(xpath = "(//img[@src = 'assets/images/logo.svg'])[2]")
     public WebElement cydeoImageAtLeftWindow;
 
-    @FindBy(xpath = "(//img[@src = 'assets/images/logo.svg'])[2]")
+    @FindBy(xpath = "//p[@class='checkout-title']/text()")
     public WebElement secureCheckout;
 
     @FindBy(xpath = "//a[contains(@href, 'https://cydeo.com/')]")
-    public List<WebElement> footerOnLeft;
+    public List<WebElement> footerElements;
 
-    @FindBy(xpath = "//p[@class='course-name']/a")
-    public WebElement programNameOnLeftWindow;
+    @FindBy(xpath = "//p[@class='course-name']/a/text()")
+    public WebElement programName;
+
 
 }

@@ -31,7 +31,7 @@ public class UITest {
     @Then("the product name on the information card matches {string} on the left side of the screen")
     public void the_product_name_on_the_information_card_matches_on_the_left_side_of_the_screen(String string) {
         BrowserUtils.waitForTextToBePresentInElement(startApplicationPage.programNameOnInfoCard,string, 10);
-        assert leftMainPage.programNameOnLeftWindow.getText().equals(string);
+        assert leftMainPage.programName.getText().equals(string);
     }
 
     @Then("the price {string} should be displayed")
@@ -44,10 +44,10 @@ public class UITest {
 
     @Then("the text indicating a {string} should be displayed")
     public void the_text_indicating_a_should_be_displayed(String string) {
-        BrowserUtils.waitForVisibility(startApplicationPage.flexiblePaymentsPlanAvailable, 10);
-        assert startApplicationPage.flexiblePaymentsPlanAvailable.isDisplayed();
-        BrowserUtils.waitForTextToBePresentInElement(startApplicationPage.flexiblePaymentsPlanAvailable, string, 10);
-        assert startApplicationPage.flexiblePaymentsPlanAvailable.getText().equals(string);
+        BrowserUtils.waitForVisibility(startApplicationPage.flexiblePaymentsPlanAvailableText, 10);
+        assert startApplicationPage.flexiblePaymentsPlanAvailableText.isDisplayed();
+        BrowserUtils.waitForTextToBePresentInElement(startApplicationPage.flexiblePaymentsPlanAvailableText, string, 10);
+        assert startApplicationPage.flexiblePaymentsPlanAvailableText.getText().equals(string);
     }
 
     @Then("the Program Start Date should be displayed")

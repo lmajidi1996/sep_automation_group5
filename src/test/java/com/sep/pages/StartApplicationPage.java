@@ -24,25 +24,47 @@ public class StartApplicationPage extends BasePage {
     public WebElement reviewStep;
 
     @FindBy(xpath = "//input[@formcontrolname='firstName']")
-    public WebElement firstNameInput;
+    public WebElement firstNameInputBox;
 
     @FindBy(xpath = "//input[@formcontrolname='lastName']")
-    public WebElement lastNameInput;
+    public WebElement lastNameInputBox;
 
     @FindBy(xpath = "//input[@formcontrolname='email']")
-    public WebElement emailInput;
+    public WebElement emailInputBox;
 
     @FindBy(xpath = "//input[@formcontrolname='phoneNumber']")
-    public WebElement phoneNumberInput;
+    public WebElement phoneNumberInputBox;
 
     @FindBy(xpath = "//mat-label[text()='How did you hear about us?']")
     public WebElement howDidYouHearAboutUsDropDown;
 
-    @FindBy(xpath = "//*[text()='Google']")
+    @FindBy(xpath = "//mat-option/span[contains(text(), 'Email')]")
+    public WebElement emailOptionFromDropDown;
+
+    @FindBy(xpath = "//mat-option/span[contains(text(), 'Facebook')]")
+    public WebElement facebookOptionFromDropDown;
+
+    @FindBy(xpath = "//mat-option/span[contains(text(), 'Google')]")
     public WebElement googleOption;
 
+    @FindBy(xpath = "//mat-option/span[contains(text(), 'Instagram')]")
+    public WebElement instagramOptionFromDropDown;
+
+    @FindBy(xpath = "//mat-option/span[contains(text(), 'LinkedIN')]")
+    public WebElement linkedInOptionFromDropDown;
+
+    @FindBy(xpath = "//mat-option/span[contains(text(), 'Twitter')]")
+    public WebElement twitterOptionFromDropDown;
+
+    @FindBy(xpath = "//mat-option/span[contains(text(), 'Referred by a friend')]")
+    public WebElement referredByFriedOptionFromDropDown;
+
+    @FindBy(xpath = "//mat-option/span[contains(text(), 'Other')]")
+    public WebElement otherOptionFromDropDown;
+
+
     @FindBy(xpath = "//p[text() = 'Flexible payments plan available']")
-    public WebElement flexiblePaymentsPlanAvailable;
+    public WebElement flexiblePaymentsPlanAvailableText;
 
     @FindBy(xpath = "//div[contains(text(), 'Program Start Date')]/b[@class='info-value']")
     public WebElement programStartDate;
@@ -60,7 +82,7 @@ public class StartApplicationPage extends BasePage {
     @FindBy(xpath = "//p[@class = 'footer-text' and contains(text(), 'Need help?')]")
     public WebElement footer;
 
-    @FindBy(xpath = "//button[@class = 'next-button' and text()='Next']")
+    @FindBy(xpath = "//button[@class = 'next-button'][contains(text(), 'Next')]")
     public WebElement nextButton;
 
 
