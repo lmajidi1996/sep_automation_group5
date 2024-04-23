@@ -108,15 +108,15 @@ public class PaymentPlanPage extends BasePage{
     @FindBy(xpath = "(//button[contains(text(), 'I have a promo code')])[2]")
     public WebElement iHaveAPromoCodeButtonUnderInstallments;
 
-    @FindBy(xpath = "(//p[@class = 'footer-text' and contains(text(), 'Need help?')])[2]")
-    public WebElement footerText;
-
     @FindBy(xpath = "//button[text()='Next']")
     public WebElement inactiveNextButton;
     @FindBy(xpath = "//button[@class = 'next-button' and text()='Next']")
     public WebElement activeNextButton;
 
-    @FindBy(xpath = "//span[@class='back-button']/u/text()")
+    @FindBy(xpath = "//span[@class='back-button']")
     public WebElement backButton;
+
+    @FindBy(xpath = "(//p[@class = 'footer-text' and contains(text(), 'Need help?')])[2]")
+    public WebElement footerText;
 
 }

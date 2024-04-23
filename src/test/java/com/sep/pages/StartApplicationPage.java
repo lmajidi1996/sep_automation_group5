@@ -14,14 +14,15 @@ public class StartApplicationPage extends BasePage {
     @FindBy(xpath = "(//div[@class = 'step-title'])[3]")
     public WebElement reviewText;
 
-    @FindBy(css = "div.step:nth-of-type(1)")
-    public WebElement startApplicationStep;
+    @FindBy(xpath = "(//*[@class='step-circle'])[1]")
+    public WebElement startApplicationStepCircle;
 
-    @FindBy(css = "div.step:nth-of-type(2)")
-    public WebElement paymentPlanStep;
+    @FindBy(xpath = "(//*[@class='step-circle'])[2]")
+    public WebElement paymentPlanStepCircle;
 
-    @FindBy(css = "div.step:nth-of-type(3)")
-    public WebElement reviewStep;
+    @FindBy(xpath = "(//*[@class='step-circle'])[3]")
+    public WebElement reviewStepCircle;
+
 
     @FindBy(xpath = "//input[@formcontrolname='firstName']")
     public WebElement firstNameInputBox;
