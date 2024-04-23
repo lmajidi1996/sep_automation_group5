@@ -1,14 +1,19 @@
 package com.sep.step_definition.getting_started;
 
-import com.sep.pages.BasePage;
-import com.sep.pages.LeftMainPage;
-import com.sep.pages.StartApplicationPage;
+import com.sep.pages.*;
+import com.sep.utilities.DriverUtils;
 import com.sep.utilities.QaDataReader;
 import com.sep.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class UITest {
+
 
     private StartApplicationPage startApplicationPage = new StartApplicationPage();
     private LeftMainPage leftMainPage = new LeftMainPage();
@@ -23,14 +28,14 @@ public class UITest {
     public void the_product_name_should_be_displayed_on_the_information_card(String string) {
         BrowserUtils.waitForVisibility(startApplicationPage.programNameOnInfoCard, 10);
         assert startApplicationPage.programNameOnInfoCard.isDisplayed();
-        BrowserUtils.waitForTextToBePresentInElement(startApplicationPage.programNameOnInfoCard,string, 10);
+        BrowserUtils.waitForTextToBePresentInElement(startApplicationPage.programNameOnInfoCard, string, 10);
         assert startApplicationPage.programNameOnInfoCard.getText().contains(string);
 
     }
 
     @Then("the product name on the information card matches {string} on the left side of the screen")
     public void the_product_name_on_the_information_card_matches_on_the_left_side_of_the_screen(String string) {
-        BrowserUtils.waitForTextToBePresentInElement(startApplicationPage.programNameOnInfoCard,string, 10);
+        BrowserUtils.waitForTextToBePresentInElement(startApplicationPage.programNameOnInfoCard, string, 10);
         assert leftMainPage.programName.getText().equals(string);
     }
 
@@ -66,6 +71,8 @@ public class UITest {
         assert startApplicationPage.refundEndDate.getText().contains(
                 BrowserUtils.abbreviateMonth(QaDataReader.getSingleProduct("rfep").getRefundDate())
         );
+
+
     }
 
 

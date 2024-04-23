@@ -3,12 +3,12 @@ package com.sep.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ReviewPlanPage {
+public class ReviewPlanPage extends BasePage{
 
     @FindBy(xpath = "//form[@id='payment-form']")
     public WebElement paymentForm;
 
-    @FindBy(xpath = "//iframe[@name='__privateStripeFrame5964']")
+    @FindBy(xpath = "(//iframe[contains(@title, 'Secure payment')])[1]")
     public WebElement paymentFrame;
 
 
@@ -67,11 +67,25 @@ public class ReviewPlanPage {
     @FindBy(xpath = "//u[normalize-space()='Terms and Conditions']")
     public WebElement termsAndConditionsLink;
 
-    @FindBy(xpath = "//button[@type='button']/")
+    @FindBy(xpath = "//button[@type='button']")
     public WebElement payButton;
 
+    @FindBy(xpath = "//p[@id='Field-numberError' and @class='p-FieldError Error' and @role='alert']")
+    public WebElement cardNumberErrorMessage;
 
-    @FindBy(xpath = "//span[@class='back-button']")
+    @FindBy(xpath = "//p[@id='Field-expiryError' and @class='p-FieldError Error' and @role='alert']")
+    public WebElement cardExpiryErrorMessage;
+
+    @FindBy(xpath = "//p[@id='Field-cvcError' and @class='p-FieldError Error' and @role='alert']")
+    public WebElement cardCVCErrorMessage;
+
+    @FindBy(xpath = "//p[@id='Field-postalCodeError' and @class='p-FieldError Error' and @role='alert']")
+    public WebElement zipCodeErrorMessage;
+
+
+
+
+    @FindBy(xpath = "(//span[@class='back-button'])[2]")
     public WebElement backButton;
 
     @FindBy(xpath = "(//p[@class = 'footer-text' and contains(text(), 'Need help?')])[3]")

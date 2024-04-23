@@ -16,8 +16,9 @@ public class LeftMainPage extends BasePage {
     @FindBy(xpath = "//a[contains(@href, 'https://cydeo.com/')]")
     public List<WebElement> footerElements;
 
-    @FindBy(xpath = "//p[@class='course-name']/a/text()")
+    @FindBy(xpath = "//p[@class='course-name']/a")
     public WebElement programName;
+
 
 
 }

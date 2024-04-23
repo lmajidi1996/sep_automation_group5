@@ -10,11 +10,9 @@ public class PaymentPlanPage extends BasePage{
     @FindBy(xpath = "//span[@class='payment-type'][contains(text(),'Upfront')]")
     public WebElement upfrontPaymentOption;
 
-    @FindBy(xpath = "//span[@class='base-price ng-star-inserted']")
-    public WebElement upfrontPaymentOriginalAmount;
 
-    @FindBy(xpath = "//span[@class='discount-price']/text()")
-    public WebElement upfrontPaymentDiscountedAmount;
+    @FindBy(xpath = "//span[@class='discount-price']")
+    public WebElement upfrontPaymentAmount;
 
     @FindBy(xpath = "//span[@class='discount-price']/span")
     public WebElement payOnceTextUpFront;
@@ -22,13 +20,13 @@ public class PaymentPlanPage extends BasePage{
     @FindBy(xpath = "(//mat-expansion-panel-header[@role='button'])[1]")
     public WebElement upfrontPaymentFrame;
 
-    @FindBy(xpath = "(//div[@class='mdc-evolution-chip-set__chips']/mat-chip[1]/span)[1]")
+    @FindBy(xpath = "//span[@class='chip-content']")
     public WebElement greenBadgeUpfrontDiscount;
 
     @FindBy(xpath = "//span[@class='chip-content']/span[@class='material-symbols-outlined light-icon']")
     public WebElement greenBadgeElectricBoltUpfrontDiscount;
 
-    @FindBy(xpath = "//span[@class='chip-content']/span[@class='material-symbols-outlined light-icon']/following-sibling::text()")
+    @FindBy(xpath = "//span[@class='chip-content']")
     public WebElement greenBadgeTextUpfrontDiscount;
 
     @FindBy(xpath = "//mat-chip[contains(@class, 'coupon-badge')]")
@@ -64,7 +62,7 @@ public class PaymentPlanPage extends BasePage{
     @FindBy(xpath = "(//mat-expansion-panel-header[@role='button'])[2]")
     public WebElement installmentsPaymentFrame;
 
-    @FindBy(xpath = "//span[@class='discount-price ng-star-inserted']/text()")
+    @FindBy(xpath = "//span[@class='discount-price ng-star-inserted']")
     public WebElement installmentsPaymentAmount;
 
     @FindBy(xpath = "//span[@class='discount-price ng-star-inserted']/span")
