@@ -8,7 +8,7 @@
     "programId": 56,
     "programCode": "taws",
     "programName": "Test Automation with Selenium",
-    "startDate": "April 10, 2024",
+    "startDate": "Apr 10, 2024",
     "refundDate": "May 10, 2024",
     "externalUrl": "cydeo.com",
     "terms": "https://docs.google.com/document/d/1FZwuv6fKa8hUAlfSykQ8jN85ycl6VCIBe_HYbY5UMkM/edit#heading=h.iq7wiy3olb6",
@@ -43,7 +43,7 @@
     "programCode": "rfep",
     "programName": "React Front End Program",
     "startDate": "May 30, 2024",
-    "refundDate": "June 10, 2024",
+    "refundDate": "Jun 10, 2024",
     "externalUrl": "cydeo.com",
     "terms": "https://docs.google.com/document/d/1FZwuv6fKa8hUAlfSykQ8jN85ycl6VCIBe_HYbY5UMkM/edit#heading=h.iq7wiy3olb6",
     "prices": [
@@ -72,8 +72,8 @@
     "programId": 4,
     "programCode": "jfft",
     "programName": "Java Foundations for Teens",
-    "startDate": "September 11, 2024",
-    "refundDate": "September 18, 2024",
+    "startDate": "Sep 11, 2024",
+    "refundDate": "Sep 18, 2024",
     "externalUrl": "cydeo.com",
     "terms": "https://docs.google.com/document/d/1FZwuv6fKa8hUAlfSykQ8jN85ycl6VCIBe_HYbY5UMkM/edit#heading=h.iq7wiy3olb6",
     "prices": [
@@ -96,8 +96,8 @@
     "programId": 5,
     "programCode": "jss",
     "programName": "Java Selenium SDET",
-    "startDate": "February 7, 2024",
-    "refundDate": "March 7, 2024",
+    "startDate": "Feb 7, 2024",
+    "refundDate": "Mar 7, 2024",
     "externalUrl": "cydeo.com",
     "terms": "https://docs.google.com/document/d/1FZwuv6fKa8hUAlfSykQ8jN85ycl6VCIBe_HYbY5UMkM/edit#heading=h.iq7wiy3olb6",
     "prices": [
@@ -122,5 +122,5 @@
       }
     ]
   }
-  
+
 ]

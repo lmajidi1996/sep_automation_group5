@@ -33,27 +33,6 @@ public class BrowserUtils {
     }
 
 
-    /**
-     * This method accepts a String as input and returns a String that represents the input date in the format "MMM dd, yyyy".
-     * The method uses the SimpleDateFormat class to parse the input date string and the newFormat variable to format the output date string.
-     * If the input date string cannot be parsed, the method returns null.
-     *
-     * @param dateString the input date string
-     * @return the input date string in the format "MMM dd, yyyy" or null if the input date string cannot be parsed
-     */
-
-    public static String abbreviateMonth(String dateString) {
-        SimpleDateFormat oldFormat = new SimpleDateFormat("MMMM dd, yyyy");
-        SimpleDateFormat newFormat = new SimpleDateFormat("MMM dd, yyyy");
-        String result = "";
-        try {
-            Date date = oldFormat.parse(dateString);
-            result = newFormat.format(date);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return result;
-    }
 
 
     public static void switchWindowAndVerify(String expectedInURL, String expectedInTitle) {
