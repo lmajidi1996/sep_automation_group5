@@ -32,7 +32,6 @@ public class Hooks {
         DriverUtils.getDriver();
         DriverUtils.getDriver().manage().window().maximize();
         DriverUtils.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
     }
 
 
