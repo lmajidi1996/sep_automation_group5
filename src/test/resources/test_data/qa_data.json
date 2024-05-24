@@ -15,24 +15,23 @@
     "prices": [
       {
         "active": true,
-        "baseAmount": 50000,
+        "baseAmount": 500,
         "type": "one-time",
         "upfrontDiscount": true,
-        "upfrontDiscountAmount": 5000,
+        "upfrontDiscountAmount": 100,
         "allowCoupons": true,
-        "couponDiscount": 5000
+        "couponDiscount": 50
       },
       {
         "active": true,
-        "baseAmount": 10000,
+        "baseAmount": 500,
         "type": "recurring",
         "numberOfInstallments": 5,
         "allowCoupons": true,
-        "couponDiscount": 5000
+        "couponDiscount": 50
       }
     ]
   },
-
   {
     "available": "on",
     "productName": "React Front End Program",
@@ -49,20 +48,17 @@
     "prices": [
       {
         "active": true,
-        "baseAmount": 40000,
-        "type": "one-time",
-        "upfrontDiscount": true,
-        "upfrontDiscountAmount": 5000
+        "baseAmount": 400,
+        "type": "one-time"
       },
       {
         "active": true,
-        "baseAmount": 10000,
+        "baseAmount": 400,
         "type": "recurring",
-        "numberOfInstallments": 5
+        "numberOfInstallments": 4
       }
     ]
   },
-
   {
     "available": "on",
     "ProductName": "Java Foundations for Teens",
@@ -79,14 +75,13 @@
     "prices": [
       {
         "active": true,
-        "baseAmount": 14900,
+        "baseAmount": 149,
         "type": "one-time",
         "upfrontDiscount": true,
-        "upfrontDiscountAmount": 5000
+        "upfrontDiscountAmount": 50
       }
     ]
   },
-
   {
     "available": "on",
     "productName": "Java Selenium SDET",
@@ -103,24 +98,23 @@
     "prices": [
       {
         "active": true,
-        "baseAmount": 100000,
+        "baseAmount": 1000,
         "type": "one-time",
         "upfrontDiscount": true,
-        "upfrontDiscountAmount": 10000
+        "upfrontDiscountAmount": 100
       },
       {
         "active": true,
-        "baseAmount": 10000,
+        "baseAmount": 1000,
         "type": "recurring",
         "numberOfInstallments": 5
       },
       {
         "active": true,
-        "baseAmount": 50000,
+        "baseAmount": 1000,
         "type": "recurring",
         "numberOfInstallments": 2
       }
     ]
   }
-
 ]
