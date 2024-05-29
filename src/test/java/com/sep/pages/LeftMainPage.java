@@ -19,6 +19,12 @@ public class LeftMainPage extends BasePage {
     @FindBy(xpath = "//p[@class='course-name']/a")
     public WebElement programName;
 
+    @FindBy(xpath = "//p[@class='checkout-title' and contains(text(), 'Secure checkout')]")
+    public WebElement getSecureCheckout;
+
+    @FindBy(xpath = "//a/img")
+    public WebElement footerCydeoImage;
+
 
 
 }
