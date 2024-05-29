@@ -15,8 +15,6 @@ Feature: View the product landing page
       | Cookie Policy        |
     And the footer on the right side should display "Need help? Contact us at enrollment@cydeo.com"
 
-
-
     Examples:
       | program code | program name                  |
       | taws         | Test Automation with Selenium |
