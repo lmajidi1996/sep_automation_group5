@@ -17,7 +17,6 @@ public class ProductLandingPage {
   @Then("the system should display the text {string}")
     public void the_system_should_display_the_text(String secureCheckout) {
         String actualSecureText=leftMainPage.getSecureCheckout.getText();
-        System.out.println(actualSecureText);
         Assertions.assertEquals(secureCheckout, actualSecureText);
     }
     @Then("the system should display the {string}")
