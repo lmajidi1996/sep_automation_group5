@@ -3,7 +3,7 @@ Feature: View the product landing page
 
   As a customer, I should be able to see the product landing page.
 
-  Scenario Outline:
+  Scenario Outline:Display Essential Elements on Checkout Page
     Given the user is on the enrollment page "<program code>"
     Then the system should display the text "Secure checkout"
     And the system should display the "<program name>"
