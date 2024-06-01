@@ -1,7 +1,15 @@
 package com.sep.pages;
 
+import com.sep.utilities.BrowserUtils;
+import com.sep.utilities.DriverUtils;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class StartApplicationPage extends BasePage {
 
@@ -85,6 +93,31 @@ public class StartApplicationPage extends BasePage {
 
     @FindBy(xpath = "//button[@class = 'next-button'][contains(text(), 'Next')]")
     public WebElement nextButton;
+
+    @FindBy(xpath = "//input[@id='mat-input-4']")
+    public WebElement parentFirstNameInputBox;
+
+    @FindBy(xpath = "//input[@id='mat-input-5']")
+    public WebElement parentLastNameInputBox;
+
+    @FindBy(xpath = "//input[@id='mat-input-6']")
+    public WebElement parentEmailAddressInputBox;
+
+    @FindBy(xpath = "//input[@id='mat-input-7']")
+    public WebElement parentPhoneNumberInputBox;
+
+    public boolean isNotClickable( WebElement element) {
+
+        WebDriverWait wait = new WebDriverWait(DriverUtils.getDriver(), Duration.ofSeconds(3));
+        try{
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            return false;
+        }catch (TimeoutException e){
+            return true;
+        }
+
+    }
+
 
 
 }
